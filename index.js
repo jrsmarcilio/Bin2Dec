@@ -23,7 +23,8 @@ binaryOne = () => {
   hendleConverte();
 };
 handleClean = () => {
-  window.location.reload();
+  document.getElementById("binary").value = "";
+  document.getElementById("decimal").value = "";
 };
 hendleConverte = () => {
   var bin = document.getElementById("binary").value;
