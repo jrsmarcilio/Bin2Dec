@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Bin2Dec - Conversor Binário para Decimal</title>
+  </head>
+  <body>
+    <header>
+      <h2>Bin2Dec</h2>
+    </header>
+
+    <div id="parent">
+      <div class="left">
+        <input
+          onkeypress="handleKeyPress()"
+          maxlength="8"
+          type="text"
+          id="binary"
+          placeholder="Number Binary"
+        />
+        <button onclick="binaryZero()">0</button>
+        <button onclick="binaryOne()">1</button>
+      </div>
+
+      <div class="right">
+        <input type="text" id="decimal" placeholder="Number Decimal" />
+
+        <button onclick="hendleConverte()">Converter</button>
+        <button onclick="handleClean()">Limpar</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
